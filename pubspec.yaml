@@ -1,0 +1,64 @@
+name: boda
+description: A new Flutter project.
+publish_to: 'none'
+
+# 버전 네이밍 YYYYMMDD+빌드카운트2자리
+version: 1.0.0+2023090801
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+# 개발 완료 후 앱을 배포할 때 포함해야하는 플러그인 목록 (컴파일 할 때 필요하다.)
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.5
+  cupertino_icons: ^1.0.2
+  pull_to_refresh: ^2.0.0 # 무한 스크롤 & 리스트 리프레쉬
+  cached_network_image: ^3.2.3 # 이미지 캐시
+  flutter_svg: ^2.0.7 # svg 아이콘
+  image_picker: ^1.0.4 # 디바이스에서 이미지 가져오기
+  dio: ^5.3.2 # REST API
+  dartz: ^0.10.1 # API 에러처리
+  freezed_annotation: ^2.4.1 # Code generator
+  logger: ^2.0.2 # 로그
+  shared_preferences: ^2.2.1 # 내부 스토리지
+
+# 개발 단계에서 앱을 테스트하기 위해 필요한 플러그인 목록 (개발할 때 필요하다.)
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1 # 앱 아이콘
+  freezed: ^2.4.2 # Code generator
+  build_runner: ^2.4.6 # Code generator
+  json_serializable: ^6.7.1 # Code generator
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/boda_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/svg/
+
+  fonts:
+    - family: SpoqaHanSansNeoB
+      fonts:
+        - asset: assets/fonts/SpoqaHanSansNeoB.otf
+    - family: SpoqaHanSansNeoL
+      fonts:
+        - asset: assets/fonts/SpoqaHanSansNeoL.otf
+    - family: SpoqaHanSansNeoM
+      fonts:
+        - asset: assets/fonts/SpoqaHanSansNeoM.otf
+    - family: SpoqaHanSansNeoR
+      fonts:
+        - asset: assets/fonts/SpoqaHanSansNeoR.otf
+    - family: SpoqaHanSansNeoT
+      fonts:
+        - asset: assets/fonts/SpoqaHanSansNeoT.otf
